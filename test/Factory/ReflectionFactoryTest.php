@@ -5,17 +5,17 @@ namespace LessLocatorTest\Factory;
 
 use ArrayAccess;
 use ArrayObject;
+use ReflectionClass;
 use ReflectionException;
 use Psr\Container\ContainerInterface;
 use LessLocator\Factory\ReflectionFactory;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\MockObject\Exception;
 use Psr\Container\NotFoundExceptionInterface;
+use PHPUnit\Framework\Attributes\CoversClass;
 use Psr\Container\ContainerExceptionInterface;
 
-/**
- * @covers \LessLocator\Factory\ReflectionFactory
- */
+#[CoversClass(ReflectionClass::class)]
 class ReflectionFactoryTest extends TestCase
 {
     /**
